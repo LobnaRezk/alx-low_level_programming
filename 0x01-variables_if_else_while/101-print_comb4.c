@@ -28,7 +28,7 @@ if (digit1 + digit2 + digit3 != 24)
 }
 digit3++;
 }
-digid2++;
+digit2++;
 }
 digit1++;
 }
