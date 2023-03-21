@@ -28,9 +28,9 @@ if (digit1 + digit2 + digit3 != 24)
 }
 digit3++;
 }
-digit2++;
+digid2++;
 }
-digit3++;
+digit1++;
 }
 putchar('\n');
 return (0);
