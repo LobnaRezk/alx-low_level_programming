@@ -1,9 +1,9 @@
-#include<unistd.h>
-#include<main.h>
+#include <unistd.h>
+#include "main.h"
 /**
  * Description:prints _putchar, followed by a new line.
- * putchar  write the character c to stdout
- * c: the character to print
+ * _putchar - write the character c to stdout
+ * 0c: the character to print
  * Return:on Success 1
  *        on error,-1 is returned. and errno is set appropriately
  */
