@@ -6,10 +6,10 @@
 void times_table(void)
 {
 int r, c, prod;
-for (r = 0; r < 10; r++)
+for (r = 0; r <= 9; r++)
 {
 _putchar(48);
-for (c = 0; c < 10; c++)
+for (c = 0; c <= 9; c++)
 {
 _putchar(',');
 _putchar(' ');
