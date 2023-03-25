@@ -14,8 +14,9 @@ _putchar('\n');
 else
 {
 for (i = 1; i <= size; i++)
+{
 	_putchar(35);
+}
 _putchar('\n');
-
 }
 }
