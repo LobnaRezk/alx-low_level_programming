@@ -15,7 +15,10 @@ else
 {
 for (int i = 1; i <= n; i++)
 {
-/* for (d = 1; d <= i; d++){_putchar(' ');}*/
+   for (d = 1; d <= i; d++)
+	{
+_putchar(' ');
+	}
 _putchar(92);
 }
 _putchar('\n');
