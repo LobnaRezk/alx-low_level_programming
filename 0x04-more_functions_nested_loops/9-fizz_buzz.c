@@ -25,9 +25,9 @@ else
 printf("%d", i);
 }
 if (i != 100)
-	printf(" ");
+printf(" ");
 else
-Printf('\n');
+Printf("\n");
 }
 return (0);
 }
