@@ -1,14 +1,14 @@
 #include <stdio.h>
 /**
- * main - function that checks for uppercase character.
+ * main - prints the numbers from 1 to 100, followed by a new line
  * Return: 0
  */
 int main(void)
 {
-int n = 100, i;
-for (i = 1; i <= n; i++)
+int i;
+for (i = 1; i <= 100; i++)
 {
-if (i % 15 == 0)
+if (i % 5 == 0 && i % 3 == 0)
 {
 printf("FizzBuzz ");
 }
