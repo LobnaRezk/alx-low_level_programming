@@ -17,9 +17,9 @@ if (i + j <= size)
 _putchar(" ");
 else 
 _putchar(35);
-
-_putchar('\n');
 }
+_putchar('\n');
+
 }
 }
 else
