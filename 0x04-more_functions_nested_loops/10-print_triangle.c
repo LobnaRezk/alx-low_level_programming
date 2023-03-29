@@ -11,16 +11,15 @@ if (size > 0)
 {
 for (i = 1; i <= size; i++)
 {
-for (j = 1; j <= size-i; j++)
+for (j = 1; j <= size; j++)
 {
+if (i + j <= size)
 _putchar(" ");
-}
-for (c = 1; c <= i;c++)
-{
+else 
 _putchar(35);
-}
 
 _putchar('\n');
+}
 }
 }
 else
