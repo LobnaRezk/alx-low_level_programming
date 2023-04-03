@@ -9,7 +9,25 @@
  */
 void print_rev(char *s)
 {
-*s = strrev(*s);
+int len = 0, i, length;
+ char temp;
+while (*s != '\0')
+{
+len++;
+s++;
+}
+length = len;
+
+for ( i = 0; i < len / 2; i++)
+{
+
+      temp = s[i];
+
+      s[i] = s[length];
+
+      s[length--] = temp;
+
+}
 while (*s != '\0')
 {
 putchar(*s);
