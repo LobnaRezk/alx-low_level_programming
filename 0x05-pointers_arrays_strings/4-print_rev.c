@@ -9,28 +9,12 @@
  */
 void print_rev(char *s)
 {
-int len = 0, i;
-char *begin_ptr, *end_ptr, ch;
-begin_ptr = s;
-end_ptr = s;
-while (*s != '\0')
+int i = 0;
+while (s[i])
+i++;
+while (i--)
 {
-len++;
-s++;
-end_ptr++;
-}
-for (i = 0; i < len / 2; i++)
-{
-ch = *end_ptr;
-*end_ptr = *begin_ptr;
-*begin_ptr = ch;
-begin_ptr++;
-end_ptr--;
-}
-while (*s != '\0')
-{
-putchar(*s);
-s++;
+putchar(s[i]);
 }
 putchar('\n');
 }
