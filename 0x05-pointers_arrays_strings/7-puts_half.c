@@ -13,7 +13,7 @@ len++;
 str++;
 }
 i = len;
-for (i /= 2; str[i] != '\0'; i++)
+for (i /= 2; i <= len - 1; i++)
 {
 putchar(str[i]);
 }
