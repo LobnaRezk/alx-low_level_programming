@@ -13,10 +13,9 @@ len++;
 str++;
 }
 len++;
-i = len;
-for (i /= 2; i <= len - 1; i++)
+for (len /= 2; str[len] != '\0'; i++)
 {
-putchar(str[i]);
+putchar(str[len]);
 }
 putchar('\n');
 }
