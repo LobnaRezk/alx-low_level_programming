@@ -7,13 +7,8 @@
 void _puts_recursion(char *s)
 {
 /* size_t size = sizeof(s) / sizeof(s[0]);*/
-if (*s != '\0')
-{
-putchar('\n');
-}
-else
-{
+if (*s == '\0')
+return;
 putchar(*s);
 _puts_recursion(s + 1);
-}
 }
