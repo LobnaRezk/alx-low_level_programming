@@ -12,8 +12,9 @@ while (*str != '\0')
 len++;
 str++;
 }
-i = len + 1;
-for (i /= 2; i <= len - 1; i++)
+len++;
+i = len;
+for (i /= 2; str[i] != '\0'; i++)
 {
 putchar(str[i]);
 }
