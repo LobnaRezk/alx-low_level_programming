@@ -6,10 +6,12 @@
  */
 void _puts_recursion(char *s)
 {
-int i;
-for (i = 0; i != '\0'; i++)
+/* size_t size = sizeof(s) / sizeof(s[0]);*/
+if (*s != '\0')
+printf("\n");
+else
 {
-putchar(s[i]);
+printf(*s);
+_puts_recursion(s+1);
 }
-putchar('\n');
 }
