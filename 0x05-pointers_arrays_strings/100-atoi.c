@@ -3,7 +3,7 @@
  *_atoi -   function that copies the string pointed to by src,
  * including the terminating null byte (\0), to the buffer pointed to by dest.
  * @s: input of function is pointer
- * Return: return the value 
+ * Return: return the value
  */
 int _atoi(char *s)
 {
@@ -18,5 +18,5 @@ else if (num > 0)
 break;
 
 } while (*s++);
-return (num * sign);
+return (num *sign);
 }
