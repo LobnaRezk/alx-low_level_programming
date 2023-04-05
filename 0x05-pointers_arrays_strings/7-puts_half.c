@@ -23,8 +23,8 @@ putchar(str[j]);
 }
 else
 {
-i= (length - 1) / 2;
-putchar(str[i];
+i= (len - 1) / 2;
+putchar(str[i]);
 }
 putchar('\n');
 }
