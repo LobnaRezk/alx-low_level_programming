@@ -13,5 +13,5 @@ for (i = 0; i < n ; i++)
 {
 printf("%i, ", a[i]);
 }
-printf('\n');
+printf("\n");
 }
