@@ -16,14 +16,14 @@ str++;
 if (len % 2 == 0)
 {
 i = len / 2;
-for (j = i; j <= len; ++j)
+for (j = i; j <= len; j++)
 {
 putchar(str[j]);
 }
 }
 else
 {
-i= (len - 1) / 2;
+i = (len - 1) / 2;
 putchar(str[i]);
 }
 putchar('\n');
