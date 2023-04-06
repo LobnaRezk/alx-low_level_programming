@@ -10,5 +10,4 @@ if (n == 0 || n == 1)
 return (0);
 else if ((n % is_prime_number((n / 2) - 1)) == 0)
 return (1);
-
 }
