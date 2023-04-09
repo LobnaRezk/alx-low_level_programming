@@ -16,6 +16,6 @@ str[i - 1] ==  33 || str[i - 1] == 63  ||  str[i - 1] == 34 || str[i - 1] == 40
 || str[i - 1] == 41 || str[i - 1] == 123 || str[i - 1] == 125)
 str[i] = str[i] - 32;
 }
-
+}
 return (str);
 }
