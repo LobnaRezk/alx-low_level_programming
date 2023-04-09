@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy- function that copies a string.
+ * _strcmp - function that copies a string.
  * @s1: input of function
  * @s2: input of function
  * Return: number of result of compares two strings
@@ -13,6 +13,7 @@ for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 if (s1[i] != s2[i])
 {
 result = (((int)s1[i] - 48) - ((int)s2[i] - 48));
+break;
 }
 }
 return (result);
