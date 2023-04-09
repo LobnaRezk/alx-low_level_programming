@@ -12,6 +12,7 @@ int *ptr = &a;
 for (i = n - 1; i >= 0; i--)
 {
 ptr[j] = a[i];
+j++;
 }
 *a = *ptr;
 }
