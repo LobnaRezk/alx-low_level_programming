@@ -12,7 +12,7 @@ int  j = 0;
 for (; j < n && dest[j] != '\0'; j++)
 {
 
-dest[i] = src[j];
+dest[j] = src[j];
 
 }
 
