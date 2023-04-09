@@ -11,10 +11,10 @@ for (i = 0; str[i] != '\0'; i++)
 {
 if (str[i] >= 'a' && str[i] <= 'z')
 {
-if (str[i] ==  44 || str[i] ==  59  || str[i] ==  46 || str[i] ==  33 ||
-str[i] == 63  ||  str[i] == 34 || str[i] == 40 || str[i] == 41 ||
-str[i] == 123 || str[i] == 125)
-str[i + 1] = str[i + 1] - 32;
+if (str[i - 1] ==  44 || str[i - 1] ==  59  || str[i - 1] ==  46 ||
+str[i - 1] ==  33 || str[i - 1] == 63  ||  str[i - 1] == 34 || str[i - 1] == 40
+|| str[i - 1] == 41 || str[i - 1] == 123 || str[i - 1] == 125)
+str[i] = str[i] - 32;
 }
 
 return (str);
