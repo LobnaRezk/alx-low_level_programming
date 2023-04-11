@@ -15,6 +15,8 @@ printf("Error\n");
 else
 {
 cents = atoi(argv[1]);
+if (cents > 0)
+{
 while (cents > 0)
 {
 if (cents % 25 == 0)
@@ -46,6 +48,9 @@ cents = cents - 1;
 printf("%d\n", cen);
 }
 }
+}
+else
+printf("0\n");
 }
 result = cen;
 return (result);
