@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 int mul, result = 1;
 if ((argc - 1) < 3)
-printf("Error/n");
+printf("Error\n");
 else
 {
 mul = atoi(argv[1]) * atoi(argv[2]);
