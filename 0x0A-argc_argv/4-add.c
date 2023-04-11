@@ -1,27 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main -  program that adds positive numbers
+ * main -  prints the minimum number of coins to make change for
+ *             an amount of money
  * @argc: int
  * @argv: an array of chars
- * Return: return result of add two numbers
+ * Return: return min number of cents
  */
 int main(int argc, char *argv[])
 {
 int result = 0, i;
 if (argc == 1)
-putchar("0\n");
+printf("0\n");
 else
 {
 for (i = 0; i < argc; i++)
 {
-if (argv[i] < 48 && argv[i] > 57)
+if (atoi(argv[i]) < 48 && atoi(argv[i]) > 57)
 {
-putchar("Error\n");
+printf("Error\n");
 result = 1;
 }
 else
 {
-result = result + argv[i];
+result = result + atoi(argv[i]);
 if (i == (argc - 1))
 printf("%d\n", result);
 }
