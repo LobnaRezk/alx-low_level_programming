@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main -  program that multiplies two numbers
  * @argc: int
@@ -9,10 +10,10 @@ int main(int argc, char *argv[])
 {
 int mul, result = 1;
 if ((argc - 1) < 3)
-putchar("Error/n");
+printf("Error/n");
 else
 {
-mul = argv[1] * argv[2];
+mul = atoi(argv[1]) * atoi(argv[2]);
 result = mul;
 printf("%d\n", mul);
 }
