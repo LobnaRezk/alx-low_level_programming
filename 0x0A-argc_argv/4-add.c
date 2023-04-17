@@ -16,7 +16,7 @@ else
 {
 for (i = 0; i < argc; i++)
 {
-if (atoi(rgv[i]) < 0 && atoi(argv[i]) > 9)
+if (atoi(argv[i]) < 0 && atoi(argv[i]) > 9)
 {
 printf("Error\n");
 result = 1;
