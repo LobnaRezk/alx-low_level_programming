@@ -19,7 +19,7 @@ while (--argc)
 {
 for (c = argv[argc]; *c ; c++)
 {
-if (*c < '0' && *c > '9')
+if (*c < '0' || *c > '9')
 {
 printf("Error\n");
 return (1);
@@ -27,8 +27,8 @@ return (1);
 }
 result = result + atoi(argv[argc]);
 }
-}
-printf("%d\n", result);
 
+printf("%d\n", result);
+}
 return (0);
 }
