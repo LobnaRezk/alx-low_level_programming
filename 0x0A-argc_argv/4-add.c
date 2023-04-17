@@ -11,14 +11,14 @@ int main(int argc, char *argv[])
 {
 int result = 0, i;
 char *c;
-c = argv;
+c = argv[0];
 if (argc == 1)
 printf("0\n");
 else
 {
 for (i = 0; i < argc; i++)
 {
-if (argv[i] < '0' && argv[i] > '9')
+if (*c < '0' && *c > '9')
 {
 printf("Error\n");
 return (1);
@@ -29,7 +29,7 @@ result = result + atoi(argv[i]);
 if (i == (argc - 1))
 printf("%d\n", result);
 }
-
+c++;
 }
 }
 return (0);
