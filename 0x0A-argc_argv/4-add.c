@@ -10,16 +10,18 @@
 int main(int argc, char *argv[])
 {
 int result = 0, i;
+char *c;
+c = argv;
 if (argc == 1)
 printf("0\n");
 else
 {
 for (i = 0; i < argc; i++)
 {
-if (atoi(argv[i]) < 0 && atoi(argv[i]) > 9)
+if (argv[i] < '0' && argv[i] > '9')
 {
 printf("Error\n");
-result = 1;
+return (1);
 }
 else
 {
@@ -27,7 +29,8 @@ result = result + atoi(argv[i]);
 if (i == (argc - 1))
 printf("%d\n", result);
 }
+
 }
 }
-return (result);
+return (0);
 }
