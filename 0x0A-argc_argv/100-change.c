@@ -25,7 +25,7 @@ if (cen % arr[i] == 0)
 result++;
 cen /= arr[i];
 }
-printf("%s\n", result);
+printf("%d\n", result);
 }
 return (0);
 }
