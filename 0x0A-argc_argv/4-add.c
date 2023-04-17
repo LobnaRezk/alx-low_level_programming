@@ -9,9 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-int result = 0, i;
+int result = 0;
 char *c;
-c = argv[0];
 if (argc == 1)
 printf("0\n");
 else
@@ -27,7 +26,7 @@ return (1);
 }
 else
 {
-result = result + atoi(argv[i]);
+result = result + atoi(argv[argc]);
 }
 }
 }
