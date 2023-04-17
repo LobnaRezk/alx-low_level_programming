@@ -16,6 +16,10 @@ if (argc == 1)
 printf("Error\n");
 return (1);
 }
+else if (argv[1] == 0 || argv[1] <= 0)
+{
+printf("%d\n", 0)
+}
 else
 {
 cen = atoi(argv[1]);
