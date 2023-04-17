@@ -8,14 +8,13 @@
  */
 int main(int argc, char *argv[])
 {
-int mul, result = 1;
-if ((argc - 1) < 3)
+int result = 1;
+if ((argc - 1) < 2)
 printf("Error\n");
 else
 {
-mul = atoi(argv[1]) * atoi(argv[2]);
-result = mul;
-printf("%d\n", mul);
+result = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", result);
 }
 return (result);
 }
