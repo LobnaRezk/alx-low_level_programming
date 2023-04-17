@@ -22,8 +22,10 @@ cen = atoi(argv[1]);
 for (i = 0; i < 5; i++)
 {
 if (cen % arr[i] == 0)
+{
 result++;
 cen /= arr[i];
+}
 }
 printf("%d\n", result);
 }
