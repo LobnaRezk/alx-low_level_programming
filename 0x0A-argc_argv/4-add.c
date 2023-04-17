@@ -16,7 +16,9 @@ if (argc == 1)
 printf("0\n");
 else
 {
-for (i = 0; i < argc; i++)
+while (--argc)
+{
+for (c = argv[argc]; *c ; c++)
 {
 if (*c < '0' && *c > '9')
 {
@@ -26,11 +28,10 @@ return (1);
 else
 {
 result = result + atoi(argv[i]);
-if (i == (argc - 1))
+}
+}
+}
 printf("%d\n", result);
-}
-c++;
-}
 }
 return (0);
 }
