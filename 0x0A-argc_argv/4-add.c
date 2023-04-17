@@ -16,7 +16,7 @@ else
 {
 for (i = 0; i < argc; i++)
 {
-if (atoi(argv[i]) < 48 && atoi(argv[i]) > 57)
+if (argv[i] < 48 && argv[i] > 57)
 {
 printf("Error\n");
 result = 1;
