@@ -24,10 +24,8 @@ if (*c < '0' && *c > '9')
 printf("Error\n");
 return (1);
 }
-else
-{
-result = result + atoi(argv[argc]);
 }
+result = result + atoi(argv[argc]);
 }
 }
 printf("%d\n", result);
