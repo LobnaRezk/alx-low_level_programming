@@ -9,49 +9,23 @@
  */
 int main(int argc, char *argv[])
 {
-int result = 1, cents, cen;
+int result = 1, i, cen;
+int arr[5] = {25, 10, 5, 2, 1};
 if (argc == 1)
+{
 printf("Error\n");
-else
-{
-cents = atoi(argv[1]);
-if (cents > 0)
-{
-while (cents > 0)
-{
-if (cents % 25 == 0)
-{
-cen = cen + 1;
-cents = cents - 25;
-}
-if (cents % 10 == 0)
-{
-cen = cen + 1;
-cents = cents - 10;
-}
-if (cents % 5 == 0)
-{
-
-cen = cen + 1;
-cents = cents - 5;
-}
-
-if (cents % 2)
-{
-cen = cen + 1;
-cents = cents - 2;
-}
-if (cents == 1)
-{
-cen++;
-cents = cents - 1;
-printf("%d\n", cen);
-}
-}
+return (1);
 }
 else
-printf("0\n");
+{
+cen = atoi(argv[1]);
+for (i = 0; i < 5; i++)
+{
+if (cen % arr[i] == 0)
+result++;
+cen /= arr[i];
 }
-result = cen;
-return (result);
+printf("%s\n", result);
+}
+return (0);
 }
