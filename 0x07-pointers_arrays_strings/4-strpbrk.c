@@ -18,5 +18,5 @@ return (s);
 }
 s++;
 }
-return (s + 1);
+return (0);
 }
