@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 /**
  * new_dog - function that creates a new dog
  * @name: pointer of char
@@ -6,7 +7,7 @@
  * @owner: pointer of char
  * Return: pointer of struct
  */
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *dogLo;
 int lenn, leno, i;
