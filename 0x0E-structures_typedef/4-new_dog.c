@@ -19,13 +19,13 @@ dogLo = malloc(sizeof(doh_t));
 if (dogLo == NULL)
 return (NULL);
 dogLo->name = malloc(lenn * sizeof(dogLo->name));
-if (doggy == NULL)
+if (dogLo == NULL)
 return (NULL);
 for (i = 0; i < lenn; i++)
 dogLo->name[i] = name[i];
-doggy->age = age;
+dogLo->age = age;
 dogLo->owner = malloc(leno * sizeof(dogLo->owner));
-if (doggy == NULL)
+if (dogLo == NULL)
 return (NULL);
 for (i = 0; i < leno; i++)
 dogLo->owner[i] = owner[i];
