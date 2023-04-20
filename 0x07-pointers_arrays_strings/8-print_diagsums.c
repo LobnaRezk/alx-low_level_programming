@@ -13,8 +13,9 @@ for (i = 0; i < size; i++)
 {
 sumx = sumx + a[i];
 sumy = sumy + a[size - i - 1];
+a = a + size;
 }
 
-printf("%d, %d", sumx, sumy);
-putchar('\n');
+printf("%d, ", sumx);
+printf("%d\n", sumy);
 }
