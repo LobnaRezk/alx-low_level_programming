@@ -16,7 +16,7 @@ for (leno = 0; owner[leno] != '\0'; leno++)
 ;
 dogLo = malloc(sizeof(doh_t));
 if (dogLo == NULL)
-return NULL;
+return (NULL);
 dogLo->name = malloc(lenn * sizeof(dogLo->name));
 if (doggy == NULL)
 return (NULL);
