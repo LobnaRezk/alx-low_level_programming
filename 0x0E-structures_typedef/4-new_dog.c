@@ -9,25 +9,28 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *dogLo;
+dog_t *doggy;
 int lenn, leno, i;
 for (lenn = 0; name[lenn] != '\0'; lenn++)
 ;
 for (leno = 0; owner[leno] != '\0'; leno++)
 ;
-dogLo = malloc(sizeof(dog_t));
-if (dogLo == NULL)
+dogLo = malloc(sizeof(dog_doggy = malloc(sizeof(dog_t));
+if (doggy == NULL)
 return (NULL);
-dogLo->name = malloc(lenn * sizeof(dogLo->name));
-if (dogLo == NULL)
+
+doggy->name = malloc(lenn * sizeof(doggy->name));
+if (doggy == NULL)
 return (NULL);
 for (i = 0; i < lenn; i++)
-dogLo->name[i] = name[i];
-dogLo->age = age;
-dogLo->owner = malloc(leno * sizeof(dogLo->owner));
-if (dogLo == NULL)
+doggy->name[i] = name[i];
+
+doggy->age = age;
+
+doggy->owner = malloc(leno * sizeof(doggy->owner));
+if (doggy == NULL)
 return (NULL);
 for (i = 0; i < leno; i++)
-dogLo->owner[i] = owner[i];
-return (dogLo);
+doggy->owner[i] = owner[i];
+return (doggy);
 }
