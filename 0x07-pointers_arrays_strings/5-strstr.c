@@ -26,13 +26,15 @@ return (i - b);
  */
 char *_strstr(char *haystack, char *needle)
 {
-unsigned int  i;
+unsigned int i;
 for (i = 0; needle[i] < '\0'; i++)
 ;
 while (*haystack != '\0')
 {
 if (_strncmp(haystack, needle, i) == 0)
-return (haystack - 1 );
+return (haystack);
+else
+return (NULL);
 haystack++;
 }
 return (NULL);
