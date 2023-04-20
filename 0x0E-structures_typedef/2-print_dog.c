@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * print_dog - function that initialize a variable of type struct dog
  * @d: struct of pointer
@@ -13,7 +15,7 @@ printf("Name: %s\n", d->name);
 else
 printf("Name: (nil)\n");
 if (d->age)
-printf("Age: %d\n" d->age);
+printf("Age: %f\n", d->age);
 else
 printf("Age: (nil)\n");
 if (d->owner)
