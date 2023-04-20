@@ -8,13 +8,14 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
+int  i; 
+for (i = 0; needle[i] < '\0'; i++)
+;
 while (*haystack != '\0')
 {
-if (*haystack == '\0')
-break;
-else if (*haystack == *needle)
+if (_strncmp(haystack, needle, i) == 0)
 return (haystack);
 haystack++;
 }
-return (haystack + 1);
+return (NULL);
 }
