@@ -13,5 +13,5 @@ if (d)
 free(d->owner);
 free(d->name);
 free(d);
-}    
+}
 }
