@@ -15,7 +15,7 @@ for (lenn = 0; name[lenn] != '\0'; lenn++)
 ;
 for (leno = 0; owner[leno] != '\0'; leno++)
 ;
-doggy = malloc(sizeof(dog_doggy = malloc(sizeof(dog_t));
+doggy = malloc(sizeof(doggy = malloc(sizeof(dog_t));
 if (doggy == NULL)
 return (NULL);
 
@@ -32,5 +32,6 @@ if (doggy == NULL)
 return (NULL);
 for (i = 0; i < leno; i++)
 doggy->owner[i] = owner[i];
+
 return (doggy);
 }
