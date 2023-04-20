@@ -22,9 +22,11 @@ if (doggy == NULL)
 return (NULL);
 for (i = 0; i < lenn; i++)
 dogLo->name[i] = name[i];
+doggy->age = age;
 dogLo->owner = malloc(leno * sizeof(dogLo->owner));
 if (doggy == NULL)
 return (NULL);
-
+for (i = 0; i < leno; i++)
+dogLo->owner[i] = owner[i];
 return (dogLo);
 }
