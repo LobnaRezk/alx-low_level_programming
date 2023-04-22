@@ -16,7 +16,7 @@ va_start(al, n);
 
 while (i < n)
 {
-words = va_arg(ap, char *);
+words = va_arg(al, char *);
 if (words)
 printf("%s", words);
 else
