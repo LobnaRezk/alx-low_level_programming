@@ -10,12 +10,17 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 { 
 unsigned int i = 0;
+char *words;
 va_list al;
 va_start(al, n);
 
 while (i < n)
 {
-printf("%d", va_arg(al, int));
+words = va_arg(ap, char *);
+if (words)
+printf("%s", words);
+else
+printf("(nil)");
 if (separator != NULL && i < n - 1)
 printf("%s", separator);
 }
