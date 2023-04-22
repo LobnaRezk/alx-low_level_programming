@@ -65,7 +65,7 @@ while (format && format[i])
 j = 0;
 while (valid_types[j].valid)
 {
-if (format[i] == *valid_types[j].valid[0])
+if (format[i] == valid_types[j].valid[0])
 {
 
 valid_types[j].f(separator, ar);
