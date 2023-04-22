@@ -23,6 +23,7 @@ else
 printf("(nil)");
 if (separator != NULL && i < n - 1)
 printf("%s", separator);
+i++;
 }
 printf("\n");
 va_end(al);
