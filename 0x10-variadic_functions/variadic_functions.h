@@ -3,6 +3,17 @@
 
 #include<stdarg.h>
 #include<stdio.h>
+/**
+ *struct validTypes - struct
+ *@valid:array of char
+ *@f:void
+ */
+typedef struct validTypes
+{
+        char *valid;
+        void (*f)();
+} v_types;
+
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
