@@ -8,7 +8,7 @@
  * Return: int (sum)
  */
 void print_strings(const char *separator, const unsigned int n, ...)
-{ 
+{
 unsigned int i = 0;
 char *words;
 va_list al;
