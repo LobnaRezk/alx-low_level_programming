@@ -18,7 +18,7 @@ int main(int argc, char  **argv[])
 	c = atoi(*argv[1]);
 	if (c < 0)
 		printf("Error\n"), exit(2);
-	for (i = 0; i < c; i++)
+	for (i = 0; i <= c; i++)
 		printf("%02hhx%s", *p++, c ? "" : "\n");
 	return (0);
 }
