@@ -3,11 +3,11 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
- * _strdup - function returns a pointer to a new string which is a duplicate 
- *           of the string str. Memory for the new string is 
+ * _strdup - function returns a pointer to a new string which is a duplicate
+ *           of the string str. Memory for the new string is
  *           obtained with malloc, and can be freed with free.
  * @str:int
- * Return: char  
+ * Return: char
  */
 char *_strdup(char *str)
 {
@@ -20,7 +20,7 @@ for (len = 0; str[len] != '\0'; len++)
 len++;
 if (len < 1)
 return (NULL);
-p = malloc(len * sizeof(char));
+p = malloc(len *sizeof(char));
 if (p == NULL)
 {
 free(p);
