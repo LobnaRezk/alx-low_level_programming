@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * add_nodeint - function that adds a new node at the end of a listint_t list
+ * add_nodeint_end - function that adds a new node at the end of a listint_t list
  * @head:const listint_t *head
  *@n:int
- * Return: size_t
+ * Return: listint_t
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
