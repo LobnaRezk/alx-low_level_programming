@@ -61,7 +61,7 @@ char **strtow(char *str)
 {
 char **p;
 int len, wc, i,  wordlen, getfirstchar, j;
-if (str == NULL || *str == '\0')
+if (str == NULL || str == "")
 return (NULL);
 len = _strlen(str);
 wc = wordcounter(str, 0, 0);
