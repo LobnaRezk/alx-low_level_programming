@@ -55,7 +55,7 @@ return (wordcount);
 /**
  * strtow -   function that splits a string into words.
  * @str:str of char
- * Return: char of char  
+ * Return: char of char
  */
 char **strtow(char *str)
 {
@@ -75,7 +75,7 @@ for (i = 0, wordlen = 0; i < wc; i++)
 wordlen = wordcounter(str, i + 1, 0);
 if (i == 0 && str[i] != ' ')
 wordlen++;
-p[i] = malloc(wordlen * sizeof(char) + 1);
+p[i] = malloc(wordlen *sizeof(char) + 1);
 if (p[i] == NULL)
 {
 for ( ; i >= 0; --i)
