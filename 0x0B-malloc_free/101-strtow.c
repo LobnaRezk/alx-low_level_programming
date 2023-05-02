@@ -60,8 +60,8 @@ return (wordcount);
 char **strtow(char *str)
 {
 char **p;
-int len, wc, i,  wordlen, getfirstchar;
-if (str == NULL || str == "")
+int len, wc, i,  wordlen, getfirstchar, j;
+if (strcmp(str, NULL) == 0 || str == "")
 return (NULL);
 len = _strlen(str);
 wc = wordcounter(str, 0, 0);
