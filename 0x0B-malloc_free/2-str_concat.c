@@ -32,7 +32,12 @@ p = malloc((s1count + s2count) *sizeof(char) + 1);
 if (p == NULL)
 return (0);
 for (i = 0; i < s1count + s2count; i++)
-i < s1count ? (p[i] = s1[i]) : (p[i] = s2[i - s1count]);
+{
+if (i < s1count)
+p[i] = s1[i];
+else
+p[i] = s2[i - s1count];
+}
 p[i] = '\0';
 return (p);
 }
