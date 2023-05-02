@@ -28,11 +28,10 @@ while (s2[s2count] != '\0')
 s2++;
 s2count++;
 }
-sizeBuffer = s1count + s2count + 1;
-p = malloc(sizeBuffer *sizeof(char));
+p = malloc((s1count + s2count) *sizeof(char) + 1);
 if (p == NULL)
 return (NULL);
-for (i = 0; i < sizeBuffer; i++)
+for (i = 0; i < s1count + s2count; i++)
 i < s1count ? (p[i] = s1[i]) : (p[i] = s2[i - s1count]);
 return (p);
 }
