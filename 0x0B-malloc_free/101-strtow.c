@@ -60,7 +60,7 @@ return (wordcount);
 char **strtow(char *str)
 {
 char **p;
-int len;
+int len, wc, i,  wordlen, getfirstchar;
 if (str == NULL || str == "")
 return (NULL);
 len = _strlen(str);
