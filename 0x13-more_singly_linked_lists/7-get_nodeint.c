@@ -11,14 +11,12 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-listint_t *nodeind = head;
-int count = 0;
-while (nodeind != NULL)
+int coun;
+for (coun = 0; coun < index; coun++)
 {
-if (count == index)
-return (nodeind);
-count++;
-nodeind = nodeind->next;
-}
+if (head->next == NULL)
 return (NULL);
+head  = head->next;
+}
+return (head);
 }
