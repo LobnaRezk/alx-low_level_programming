@@ -10,13 +10,11 @@
  */
 int sum_listint(listint_t *head)
 {
-listint_t *new;
-new = head;
 int sum = 0;
-while (new)
+while (head)
 {
-sum = sum + new->n;
-new = new->next;
+sum = sum + head->n;
+head = head->next;
 }
 return (sum);
 }
