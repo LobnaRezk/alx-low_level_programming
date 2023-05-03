@@ -7,12 +7,12 @@
  *                 a listint_t linked list.
  * @head:const listint_t *head
  * @index:unsigned int
- * Return: int
+ * Return: listint_t
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-int coun;
-for (coun = 0; coun < index; coun++)
+unsigned  int count;
+for (count = 0; count < index; count++)
 {
 if (head->next == NULL)
 return (NULL);
